@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: unset;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="./dragonball-z.jpg" alt="" width="100%" />
+
+    <picture>
+      <source srcset="./dragonball-z-300.jpeg" media="(max-width: 300px)" />
+      <source srcset="./dragonball-z-500.jpeg" media="(max-width: 500px)" />
+      <source srcset="./dragonball-z-700.jpeg" media="(max-width: 700px)" />
+      <source srcset="./dragonball-z-1000.jpeg" media="(max-width: 1000px)" />
+
+      <img src="./dragonball-z.jpg" alt="" width="100%" />
+    </picture>
+
+    <!-- device screen 100px -> 200px => display 200 -->
+    <!-- device screen 201px -> 300px => display 300 -->
+    <!-- device screen 301px -> 400px => display 400 -->
+    <!-- device screen 401px up  => display 1000 -->
+    <!-- <picture>
+      <source srcset="https://placehold.co/200" media="(max-width: 200px)" />
+      <source srcset="https://placehold.co/300" media="(max-width: 300px)" />
+      <source srcset="https://placehold.co/400" media="(max-width: 400px)" />
+
+      <img src="https://placehold.co/1000" alt="" width="100%" />
+    </picture> -->
+
+    <!-- device screen 100px which picture is loaded ? -->
+    <!-- <picture>
+      <source srcset="https://placehold.co/1000" media="(min-width: 401px)" />
+      <source srcset="https://placehold.co/400" media="(min-width: 301px)" />
+      <source srcset="https://placehold.co/300" media="(min-width: 201px)" />
+      <img src="https://placehold.co/200" alt="" width="100%" />
+    </picture> -->
+
+    <!-- <div style="width: 100%; height: 300px">
+      <img
+        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.vox-cdn.com%2Fthumbor%2FSTGZHcY0vxoEzhkEaCqM6-iNL3Q%3D%2F172x0%3A1279x738%2F2420x1613%2Ffilters%3Afocal(172x0%3A1279x738)%2Fcdn.vox-cdn.com%2Fuploads%2Fchorus_image%2Fimage%2F46228692%2Fwall6_wallpaper_1280x800.0.0.jpg&f=1&nofb=1&ipt=2d394a2dae8ae90da7ec16c395d61f761154e718dcaf15eb40a77861b3737596"
+        alt="this is dragonball poster"
+        width="1000"
+        height="500"
+        loading="lazy"
+      />
+      <img
+        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.animeinformer.com%2Fwp-content%2Fuploads%2F2023%2F01%2Fdragon-ball-super-season-2.jpg&f=1&nofb=1&ipt=ec43e70529d632496ce24db2ebf0d6d0e8ffe2f0316325e164f995c638bdd572"
+        alt="this is dragonball poster"
+        width="1000"
+        height="500"
+        loading="lazy"
+      />
+      <img
+        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg-s-msn-com.akamaized.net%2Ftenant%2Famp%2Fentityid%2FAA1ml5wl.img%3Fw%3D1400%26h%3D700%26m%3D4%26q%3D79&f=1&nofb=1&ipt=13e887df1d8089848ab87c3168818a715e063c44977c2e30f2ea202bf08cfed1"
+        alt="this is dragonball poster"
+        width="1000"
+        height="500"
+        loading="lazy"
+      />
+      <img
+        src="https://cdn.pixabay.com/photo/2025/08/02/11/04/wood-9750451_960_720.jpg"
+        alt="this is dragonball poster"
+        width="1000"
+        height="500"
+        loading="lazy"
+      />
+      <img
+        src="https://cdn.pixabay.com/photo/2025/07/30/01/14/drink-9743627_1280.jpg"
+        alt="this is dragonball poster"
+        width="1000"
+        height="500"
+        loading="lazy"
+      />
+      <img
+        src="./bird-9779577.png"
+        alt="this is dragonball poster"
+        width="100"
+        loading="lazy"
+      />
+    </div> -->
+  </body>
+</html>
